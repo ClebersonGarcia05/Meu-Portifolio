@@ -8,7 +8,7 @@ header{
     padding-top: 10px;
     padding-bottom: 10px;
     width: 100%;
-    background-color: #444;
+    background-image: linear-gradient(to bottom, black, blue);
     position: sticky;
     top: 0;
 }
@@ -18,28 +18,31 @@ nav{
     justify-content: space-around;
     width: 100%;
     color: white;
+    font-family: 'Lora', serif;
+    font-size: 20px;
 }
 .menu:hover{
     cursor: pointer;
-    color: #5cceee;
+    color: #02EEFF;
 }
 .cont{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
-    height: 400px;
-    background-color: #0e1d47;
-}
-.cleberson{
-    width: 250px;
-    height: 350px;
-    border-radius: 80%;
+    height: 572px;
+    background-image: url(../img/fundo.png);
 }
 .foto{
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 50%;
+}
+.cleberson{
+    width: 250px;
+    height: 350px;
+    border-radius: 10%;
 }
 .apresentacao{
     width: 50%;
