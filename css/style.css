@@ -50,21 +50,24 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-family: 'Lora', serif;
 }
 .bem-vindo{
-    color: #37F092;
+    color: white;
+    font-size: 35px;
 }
 .nome{
     padding: 10px 0px 10px 0px;
-    color: #37F092;
+    color: white;
+    font-size: 30px;
 }
 .button-sobre{
     border: solid 3px black;
     border-radius: 20px;
-    background-color: aqua;
+    background-color: #37F092;
     color: black;
     width: 20%;
-    height: 10%;
+    height: 40px;
     margin-left: 50px;
     margin-top: 10px;
 }
