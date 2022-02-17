@@ -33,17 +33,6 @@ nav{
     height: 572px;
     background-image: url(../img/fundo.png);
 }
-.foto{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-}
-.cleberson{
-    width: 250px;
-    height: 350px;
-    border-radius: 10%;
-}
 .apresentacao{
     width: 100%;
     height: 100%;
@@ -76,4 +65,35 @@ nav{
     color: aqua;
     border: solid 2px aqua;
     cursor: pointer;
+}
+.teste{
+    text-align: center;
+    width: 100%;
+    height: 35px;
+    margin-top: 15px;
+}
+.sobre{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.foto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+.cleberson{
+    width: 250px;
+    height: 350px;
+    border-radius: 10%;
+}
+p{
+    width: 50%;
+    height: 100%;
+    text-align: justify;
+    font-size: 20px;
 }
