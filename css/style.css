@@ -25,7 +25,7 @@ nav{
     cursor: pointer;
     color: #02EEFF;
 }
-.cont{
+.inicio{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -37,7 +37,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 30%;
 }
 .cleberson{
     width: 250px;
@@ -64,8 +64,8 @@ nav{
 .button-sobre{
     border: solid 3px black;
     border-radius: 20px;
-    background-color: #37F092;
-    color: black;
+    background-color: #448592;
+    color: white;
     width: 20%;
     height: 40px;
     margin-left: 50px;
