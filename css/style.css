@@ -124,6 +124,7 @@ nav{
 }
 .skill-image{
     width: 200px;
+    border-radius: 30px;
 }
 .habilidades{
     width: 100%;
