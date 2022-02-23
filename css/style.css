@@ -135,6 +135,9 @@ nav{
     flex-wrap: wrap;
     background-color: rgb(75, 74, 74);
 }
+.skill-card{
+    position: relative;
+}
 .teste{
     padding-top: 3000px;
 }
