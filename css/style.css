@@ -26,7 +26,7 @@ nav{
 }
 .menu:hover{
     cursor: pointer;
-    color: #02EEFF;
+    color: #000000;
 }
 /*Fim do cabeçalho*/
 
@@ -151,7 +151,7 @@ nav{
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-color: #d9d9da;
+    background-color: #d9d9da;;
 }
 .skill-card{
     position: relative;
