@@ -2,13 +2,15 @@
     margin: 0;
     padding: 0;
 }
+
+/*Cabeçalho*/
 header{
     display: flex;
     align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
     width: 100%;
-    background-image: linear-gradient(to bottom, black, blue);
+    background-image: linear-gradient(to bottom, #50e6ff, #5869cc);
     position: sticky;
     top: 0;
     z-index: 2;
@@ -26,6 +28,9 @@ nav{
     cursor: pointer;
     color: #02EEFF;
 }
+/*Fim do cabeçalho*/
+
+/*Inicio*/
 .inicio{
     display: flex;
     align-items: center;
@@ -67,12 +72,14 @@ nav{
     border: solid 2px aqua;
     cursor: pointer;
 }
+/*Fim do Inicio*/
+/*Sobre*/
 .sobre{
     width: 100%;
     height: 450px;
     display: flex;
     align-items: center;
-    background-color: rgb(212, 212, 212);
+    background-color: #d9d9da;
     flex-wrap: wrap;
     justify-content: flex-end;
     flex-direction: row;
@@ -117,10 +124,21 @@ nav{
     flex-direction: column;
     justify-content: space-around;
 }
+.sobre::after{
+    content: "";
+    border-top: solid 2px blue;
+    width: 10%;
+    position: absolute;
+    top: 35px;
+    left: 45%;
+}
+/*Fim do sobre*/
+/*Skills*/
 .skill-container{
     display: grid;
     grid-gap: 100px;
     grid-template-columns: auto auto auto;
+    text-align: center;
 }
 .skill-image{
     width: 200px;
@@ -133,11 +151,26 @@ nav{
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-color: rgb(75, 74, 74);
+    background-color: #d9d9da;
 }
 .skill-card{
     position: relative;
 }
+.skill-name{
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    margin: 30px 0 20px;
+}
+.skill-info{
+    color: #5c5c5c;
+}
+.git{
+    width: 100%;
+    background-color: orangered;
+    position: absolute;
+}
+/*Fim do skills*/
 .teste{
     padding-top: 3000px;
 }
