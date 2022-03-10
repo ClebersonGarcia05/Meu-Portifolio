@@ -5,28 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cleberson Garcia - Desenvolvedor Front-End</title>
+
+    <!--Link Css-->
     <link rel="stylesheet" href="./css/style.css">
+
+    <!--Fontes Roboto e Poppins-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!--Começo do Header-->
     <header>
         <h1 class="titulo-portifolio">Portifó<span class="colorido">lio</span></h1>
         <nav class="cabecalho">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Projetos</a></li>
+            <ul id="lista-menu">
+                <li><a href="#" id="home-menu" class="main-btn active">Home</a></li>
+                <li><a href="#" class="main-btn">Sobre</a></li>
+                <li><a href="#" class="main-btn">Skills</a></li>
+                <li><a href="#" class="main-btn">Projetos</a></li>
                 <li><a class="button-contato" href="#">CONTATO</a></li>
             </ul>
         </nav>
         <div class="social">
-            <a href="http://"><img class="img-github" src="img/github-brands.svg" alt="github"></a>
-            <a href="http://"><img class="img-linkedin" src="img/linkedin-brands.svg" alt="github"></a>
+            <a href="https://github.com/ClebersonGarcia05" target="_blanck"><img class="img-github" src="img/github-brands.svg" alt="github"></a>
+            <a href="https://www.linkedin.com/in/cleberson-garcia/" target="_blanck"><img class="img-linkedin" src="img/linkedin-brands.svg" alt="github"></a>
         </div>
     </header>
+    <!--Fim do Header-->
+    <!--Começo do script-->
+    <script>
+        var btnContainer = document.getElementById("lista-menu");
+        var btns = btnContainer.getElementsByClassName("main-btn");
+        for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+        });
+        }
+    </script>
+    <!--Fim de script-->
 </body>
 </html>

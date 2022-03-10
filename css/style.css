@@ -5,6 +5,8 @@
 body{
     background-color: #666666;
 }
+
+/*Começo do header*/
 header{
     background-color: #282828;
     width: 100%;
@@ -30,22 +32,28 @@ header{
     color: #E0E0E0;
     font-family: 'Roboto', sans-serif;
 }
-ul{
+#lista-menu{
     display: flex;
     justify-content: space-around;
     list-style: none;
 }
-a{
+.main-btn, a{
     text-decoration: none;
     color: #E0E0E0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.active{
+    border-bottom: solid 2px #E0E0E0;
 }
 .button-contato{
     background-image: linear-gradient(to bottom, #48DEFF, #48A7FF);
     padding: 4px 8px 4px 8px;
     border-radius: 5px;
-    box-shadow: 1px 1px 4px #FFF;
+    box-shadow: 1px 1px 5px #E0E0E0;
     color: #0E0142;
     font-family: 'Roboto', sans-serif;
+    font-weight: 550;
 }
 .img-github{
     width: 30px;
@@ -60,3 +68,4 @@ a{
     display: flex;
     justify-content: space-around;
 }
+/*Fim do header*/
