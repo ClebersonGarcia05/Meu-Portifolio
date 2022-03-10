@@ -43,7 +43,7 @@ header{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
-.active{
+.active, .main-btn:hover {
     border-bottom: solid 2px #E0E0E0;
 }
 .button-contato{
@@ -69,6 +69,8 @@ header{
     justify-content: space-around;
 }
 /*Fim do header*/
+
+/*Começo página inicial*/
 #home{
     width: 100%;
     height: 529px;
@@ -92,4 +94,26 @@ header{
 }
 .cor-azul{
     color:#48DEFF;
+}
+/*Fim página inicial*/
+
+/*Começo do sobre*/
+#sobre{
+    width: 100%;
+    background-color: #282828;
+    margin-top: 5px;
+}
+.subtitulo{
+    color: #E0E0E0;
+    text-align: center;
+    font-size: 36px;
+    padding-top: 20px;
+    text-decoration: underline #48DEFF 2px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+.info{
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
