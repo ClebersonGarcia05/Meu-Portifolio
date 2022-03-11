@@ -99,6 +99,11 @@
         });
         }
 
+        //Parte scroll header
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY, 0)
+        })
 
         //Parte Scroll
         const menuItems = document.querySelectorAll('#lista-menu a[href^="#"]');
