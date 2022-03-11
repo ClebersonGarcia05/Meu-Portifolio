@@ -17,7 +17,7 @@
 </head>
 <body>
     <!--Começo do Header-->
-    <header>
+    <header id="nav-bar">
         <h1 class="titulo-portifolio">Portifó<span class="colorido">lio</span></h1>
         <nav class="cabecalho">
             <ul id="lista-menu">
@@ -34,6 +34,8 @@
         </div>
     </header>
     <!--Fim do Header-->
+
+    <!--Main-->
     <main>
         <div id="home">
             <div class="img-principal">
@@ -41,16 +43,46 @@
             </div>
             <h2 class="name">Meu nome é <br> <span id="meu-nome">Cleberson Garcia</span> <br> eu sou <span class="cor-azul">desenvolvedor.</span></h2>
         </div>
-        <div id="sobre">
+        <div id="sobre" class="background-cinza">
             <h3 class="subtitulo">Sobre</h3>
             <div class="info">
-                <img src="img/Cleberson 3.png" alt="Cleberson Garcia">
-                <p>Meu nome é Cleberson, tenho 22 anos, moro em Patrocínio Paulista - SP e sou estudante de programação a fim de me tornar um desenvolvedor. Estou no último ano de sistemas de informação na faculdade de Franca - UNIFRAN e sempre buscando mais conhecimento na área de programação através de cursos. Estou em busca da minha primeira oportunidade como desenvolvedor para que eu possa ganhar experiencia e participar de projetos reais para aprimorar meus conhecimentos. Sou uma pessoa comunicativa, de fácil aprendizado, esforçado e que gosta sempre de aprender coisas novas. Meu sonho é poder trabalhar de qualquer lugar ajudando as pessoas com a programação. Estou disposto a aprender qualquer linguagem.</p>
+                <figure class="minha-img">
+                    <img src="img/Cleberson 3.png" alt="Cleberson Garcia">
+                </figure>
+                <p class="sobre-mim">Meu nome é Cleberson, tenho 22 anos, moro em Patrocínio Paulista - SP e sou estudante de programação a fim de me tornar um desenvolvedor. Estou no último ano de sistemas de informação na faculdade de Franca - UNIFRAN e sempre buscando mais conhecimento na área de programação através de cursos. Estou em busca da minha primeira oportunidade como desenvolvedor para que eu possa ganhar experiencia e participar de projetos reais para aprimorar meus conhecimentos. Sou uma pessoa comunicativa, de fácil aprendizado, esforçado e que gosta sempre de aprender coisas novas. Meu sonho é poder trabalhar de qualquer lugar ajudando as pessoas com a programação. Estou disposto a aprender qualquer linguagem.</p>
+            </div>
+        </div>
+        <div id="skill" class="background-cinza">
+            <h3 class="subtitulo">Skills</h3>
+            <div class="grid-images">
+                <figure class="skill-images html">
+                    <img src="img/html5-brands.svg" alt="HTML5" class="skill-img">
+                    <figcaption>HTML5</figcaption>                   
+                </figure>
+                <figure class="skill-images css">
+                    <img src="img/css3-alt-brands.svg" alt="CSS3" class="skill-img">
+                    <figcaption>CSS3</figcaption>
+                </figure>
+                <figure class="skill-images javascript">
+                    <img src="img/js-square-brands.svg" alt="JavaScript" class="skill-img">
+                    <figcaption>JavaScript</figcaption>
+                </figure>
+                <figure class="skill-images python">
+                    <img src="img/python-brands.svg" alt="Python" class="skill-img">
+                    <figcaption>Python</figcaption>
+                </figure>
+                <figure class="skill-images git">
+                    <img src="img/git-alt-brands.svg" alt="Git" class="skill-img">
+                    <figcaption>GIT</figcaption>
+                </figure>
             </div>
         </div>
     </main>
+    <!--Fim do Main-->
+
     <!--Começo do script-->
     <script>
+        //Parte da escolha do menu
         var btnContainer = document.getElementById("lista-menu");
         var btns = btnContainer.getElementsByClassName("main-btn");
         for (var i = 0; i < btns.length; i++) {
