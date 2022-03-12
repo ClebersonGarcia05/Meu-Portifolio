@@ -249,3 +249,34 @@ figcaption{
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
 }
+/*Fim Skills*/
+
+/*Projetos*/
+.projeto{
+    position: relative;
+}
+.img-projeto{
+    width: 300px;
+    height: 350px;
+    position: relative;
+    box-shadow: 1px 1px 4px #FFFFFF;
+}
+.card{
+    position: relative;
+}
+.grid-images-projetos{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+}
+.legenda-img-proj{
+    position: absolute;
+    font-size: 36px;
+    top: 20px;
+    left: 80px;
+    color: #E0E0E0;
+}
