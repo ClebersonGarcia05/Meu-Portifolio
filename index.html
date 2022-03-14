@@ -30,7 +30,7 @@
         </nav>
         <div class="social">
             <a href="https://github.com/ClebersonGarcia05" target="_blanck"><img class="img-github" src="img/github-brands.svg" alt="github"></a>
-            <a href="https://www.linkedin.com/in/cleberson-garcia/" target="_blanck"><img class="img-linkedin" src="img/linkedin-brands.svg" alt="github"></a>
+            <a href="https://www.linkedin.com/in/cleberson-garcia" target="_blanck"><img class="img-linkedin" src="img/linkedin-brands.svg" alt="linkedin"></a>
         </div>
     </header>
     <!--Fim do Header-->
@@ -41,7 +41,7 @@
             <div class="img-principal">
                 <img class="img-principal" src="img/christian-wiediger-WkfDrhxDMC8-unsplash.jpg" alt="Imagem principal" srcset="">
             </div>
-            <h2 class="name">Meu nome é <br> <span id="meu-nome">Cleberson Garcia</span> <br> eu sou <span class="cor-azul">desenvolvedor.</span></h2>
+            <h2 class="name">Meu nome é <br> <span id="meu-nome">Cleberson G. Nascimento</span> <br> eu sou <span class="cor-azul">desenvolvedor.</span></h2>
         </div>
         <div id="sobre" class="background-cinza sobre">
             <h3 class="subtitulo">Sobre</h3>
@@ -49,7 +49,7 @@
                 <figure class="minha-img">
                     <img src="img/Cleberson 3.png" alt="Cleberson Garcia">
                 </figure>
-                <p class="sobre-mim">Meu nome é Cleberson, tenho 22 anos, moro em Patrocínio Paulista - SP e sou estudante de programação a fim de me tornar um desenvolvedor. Estou no último ano de sistemas de informação na faculdade de Franca - UNIFRAN e sempre buscando mais conhecimento na área de programação através de cursos. Estou em busca da minha primeira oportunidade como desenvolvedor para que eu possa ganhar experiencia e participar de projetos reais para aprimorar meus conhecimentos. Sou uma pessoa comunicativa, de fácil aprendizado, esforçado e que gosta sempre de aprender coisas novas. Meu sonho é poder trabalhar de qualquer lugar ajudando as pessoas com a programação. Estou disposto a aprender qualquer linguagem.</p>
+                <p class="sobre-mim">Tenho 22 anos, moro em Patrocínio Paulista - SP e sou estudante de programação a fim de me tornar um desenvolvedor. Estou no último ano de sistemas de informação na faculdade de Franca - UNIFRAN e sempre buscando mais conhecimento na área de programação através de cursos. Estou em busca da minha primeira oportunidade como desenvolvedor para que eu possa ganhar experiencia e participar de projetos reais para aprimorar meus conhecimentos. Sou uma pessoa comunicativa, de fácil aprendizado, esforçado e que gosta sempre de aprender coisas novas. Meu sonho é poder trabalhar de qualquer lugar ajudando as pessoas com a programação. Estou disposto a aprender qualquer linguagem.</p>
             </div>
         </div>
         <div id="skill" class="background-cinza skill">
@@ -90,18 +90,34 @@
                 </figure>
             </div>
         </div>
-        <div id="contato" class="background-cinza contato">
-            <h3 class="subtitulo">Contato</h3>
-            <form action="">
-                <input type="text" placeholder="Nome*" required>
-                <input type="email" placeholder="E-mail*" required>
-                <input type="text" placeholder="Assunto">
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-            </form>
-        </div>
     </main>
     <!--Fim do Main-->
 
+    <footer>
+        <div id="contato" class="background-cinza contato">
+            <h3 class="subtitulo">Contato</h3>
+            <h4>Me envie um e-mail</h4>
+            <form action="." id="contact-form">
+                <fieldset>
+                    <div class="div-form">
+                        <input type="text" placeholder="Nome *" id="nome-contact" class="box" required>
+                    </div>
+                    <div class="div-form">
+                        <input type="email" placeholder="E-mail *" id="email-contact" class="box" required>
+                    </div>
+                    <div class="div-form">
+                        <input type="text" placeholder="Assunto" id="assunto-contact" class="box" required>
+                    </div>
+                    <div class="div-form">
+                        <textarea name="contactMensagem" id="contactMensagem" cols="30" rows="10" placeholder="Mensagem *" class="box" required></textarea>
+                    </div>
+                    <div class="div-form">
+                        <input type="submit" value="ENVIAR" class="box enviar-form">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </footer>
     <!--Começo do script-->
     <script>
         //Parte da escolha do menu

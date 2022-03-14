@@ -5,6 +5,15 @@
 body{
     background-color: #666666;
 }
+body::-webkit-scrollbar{
+    width: 8px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #48DEFF;
+}
+body::-webkit-scrollbar-track{
+    background-color: #666666;
+}
 
 /*Começo do header*/
 header{
@@ -284,3 +293,55 @@ figcaption{
 /*Fim Projetos*/
 
 /*Contato*/
+#contato{
+    height: 800px;
+}
+h4{
+    text-align: center;
+    font-size: 28px;
+    margin-top: 40px;
+    color: #E0E0E0;
+}
+#contact-form{
+    width: 100%;
+    margin-top: 30px;
+}
+fieldset{
+    border: none;
+}
+.div-form{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.box{
+    width: 50%;
+    background-color: #282828;
+    border: none;
+    border-bottom: solid 1px #666666;
+    font-size: 18px;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+    resize: none;
+    margin-top: 30px;
+    color: #E0E0E0;
+}
+.box:focus{
+    border-bottom: solid 1px #48DEFF;
+}
+.box::placeholder{
+    color:#B8B8B8;
+}
+.enviar-form{
+    background-image: linear-gradient(to bottom, #48DEFF, #48A7FF);
+    padding: 4px 8px 4px 8px;
+    border-radius: 5px;
+    color: #0E0142;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 550;
+}
+.enviar-form:hover{
+    filter: brightness(90%);
+    cursor: pointer;
+}
