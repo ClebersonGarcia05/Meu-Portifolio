@@ -97,19 +97,21 @@
         <div id="contato" class="background-cinza contato">
             <h3 class="subtitulo">Contato</h3>
             <h4>Me envie um e-mail</h4>
-            <form action="." method="post" id="contact-form">
+            <form action="https://api.staticforms.xyz/submit" method="POST" id="contact-form">
+                <input type="hidden" name="accessKey" value="333190a4-8823-4c73-b2ba-59cc4a9c0dc8">
+                <input type="hidden" name="redirectTo" value="">
                 <fieldset>
                     <div class="div-form">
-                        <input type="text" placeholder="Nome *" id="nome-contact" class="box" required>
+                        <input type="text" placeholder="Nome *" id="nome-contact" class="box" required name="name">
                     </div>
                     <div class="div-form">
-                        <input type="email" placeholder="E-mail *" id="email-contact" class="box" required>
+                        <input type="email" placeholder="E-mail *" id="email-contact" class="box" required name="email">
                     </div>
                     <div class="div-form">
-                        <input type="text" placeholder="Assunto" id="assunto-contact" class="box" required>
+                        <input type="text" placeholder="Assunto" id="assunto-contact" class="box" required name="subject">
                     </div>
                     <div class="div-form">
-                        <textarea name="contactMensagem" id="contactMensagem" cols="30" rows="10" placeholder="Mensagem *" class="box" required></textarea>
+                        <textarea name="message" id="contactMensagem" cols="30" rows="10" placeholder="Mensagem *" class="box" required></textarea>
                     </div>
                     <div class="div-form">
                         <input type="submit" value="ENVIAR" class="box enviar-form">
