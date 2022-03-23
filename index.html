@@ -19,13 +19,16 @@
     <!--Começo do Header-->
     <header id="nav-bar">
         <h1 class="titulo-portifolio">Portifó<span class="colorido">lio</span></h1>
-        <nav class="cabecalho">
-            <ul id="lista-menu">
+        <nav class="cabecalho" id="nav">
+            <button id="btn-mobile" aria-expanded="false" aria-controls="lista-menu" aria-haspopup="true" aria-label="Abrir Menu">menu
+                <span id="hamburguer"></span>
+            </button>
+            <ul id="lista-menu" role="menu">
                 <li><a href="#home" id="home-menu" class="main-btn active">Home</a></li>
                 <li><a href="#sobre" class="main-btn">Sobre</a></li>
                 <li><a href="#skill" class="main-btn">Skills</a></li>
                 <li><a href="#projeto" class="main-btn">Projetos</a></li>
-                <li><a class="button-contato" href="#contato">CONTATO</a></li>
+                <li><a class="button-contato main-btn" href="#contato">CONTATO</a></li>
             </ul>
         </nav>
         <div class="social">
@@ -47,7 +50,7 @@
             <h3 class="subtitulo">Sobre</h3>
             <div class="info">
                 <figure class="minha-img">
-                    <img src="img/Cleberson 3.png" alt="Cleberson Garcia">
+                    <img src="img/Cleberson 3.png" alt="Cleberson Garcia" id="foto-perfil">
                 </figure>
                 <p class="sobre-mim">Tenho 22 anos, moro em Patrocínio Paulista - SP e sou estudante de programação a fim de me tornar um desenvolvedor. Estou no último ano de sistemas de informação na faculdade de Franca - UNIFRAN e sempre buscando mais conhecimento na área de programação através de cursos. Estou em busca da minha primeira oportunidade como desenvolvedor para que eu possa ganhar experiencia e participar de projetos reais para aprimorar meus conhecimentos. Sou uma pessoa comunicativa, de fácil aprendizado, esforçado e que gosta sempre de aprender coisas novas. Meu sonho é poder trabalhar de qualquer lugar ajudando as pessoas com a programação. Estou disposto a aprender qualquer linguagem.</p>
             </div>
@@ -99,7 +102,7 @@
             <h4>Me envie um e-mail</h4>
             <form action="https://api.staticforms.xyz/submit" method="POST" id="contact-form">
                 <input type="hidden" name="accessKey" value="333190a4-8823-4c73-b2ba-59cc4a9c0dc8">
-                <input type="hidden" name="redirectTo" value="">
+                <input type="hidden" name="redirectTo" value="http://www.google.com.br">
                 <fieldset>
                     <div class="div-form">
                         <input type="text" placeholder="Nome *" id="nome-contact" class="box" required name="name">
@@ -196,6 +199,28 @@
             window.scroll(newX, newY);
         }, 1000 / 60); // 60 fps
         };
+
+        const btnMobile = document.getElementById("btn-mobile")
+
+        function toggleMenu(event){
+            if (event.type === 'touchstart') event.preventDefault()
+            const nav = document.getElementById("nav")
+            nav.classList.toggle('teste')
+            const teste = nav.classList.contains('teste')
+            event.currentTarget.setAttribute('aria-expanded',  teste)
+            const trocar = document.querySelector('.button-contato')
+            trocar.innerHTML = 'Contato'
+            if(teste){
+                event.currentTarget.setAttribute('aria-label', 'Fechar Menu')
+            }
+            else{
+                event.currentTarget.setAttribute('aria-label', 'Abrir Menu')
+            }
+                
+        }
+
+        btnMobile.addEventListener('click', toggleMenu)
+        btnMobile.addEventListener('touchstart', toggleMenu)
     </script>
     <!--Fim de script-->
 </body>

@@ -23,6 +23,9 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+.icon-menu{
+    display: none;
+}
 .sticky{
     position: sticky;
     top: 0;
@@ -344,4 +347,108 @@ fieldset{
 .enviar-form:hover{
     filter: brightness(90%);
     cursor: pointer;
+}
+
+/*Responsivo*/
+@media(max-width: 420px){
+    header{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .titulo-portifolio{
+        font-size: 24px;
+        width: 40%;
+        padding-left: 0;
+    }
+    #nav, #btn-mobile {
+        display: flex;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;
+      }
+      #hamburger {
+        border-top: white 2px solid;
+        width: 20px;
+      }
+      #hamburger::after,
+      #hamburger::before {
+        content: ' ';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+        z-index: 5000;
+      }
+      #nav.teste #hamburger {
+        border-top-color: transparent;
+      }
+      #nav.teste #hamburger::before {
+        transform: rotate(135deg);
+      }
+      #nav.teste #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+      }
+    #lista-menu{
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 50px;
+        z-index: 1000;
+        right: 0;
+        height: 0;
+        transition: .6s;
+        background-color: #282828;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    .teste #lista-menu{
+        visibility: visible;
+        height: 100vh;
+    }    
+    li{
+        padding: 1rem 0;
+        margin: 1rem 0;
+    }
+    .button-contato{
+        text-decoration: none;
+        color: #E0E0E0;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        box-shadow: none;
+        background-image: none;
+        padding: 0;
+        border-radius: unset;
+    }
+    .social{
+        width: 30%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .sticky{
+        position: relative;
+        top: 0;
+        z-index: 2000;
+        height: 50px;
+    }
+    .sticky h1{
+        font-size: 24px;
+        width: 40%;
+        padding-left: 0;
+    }
+    .sticky .img-github{
+        width: 25px;
+        height: 25px;
+    }
+    .sticky .img-linkedin{
+        width: 25px;
+        height: 25px;
+    }
 }
