@@ -224,7 +224,7 @@ body::-webkit-scrollbar-track{
     border: solid 5px #BABE00;
     position: absolute;
     top:35px;
-    background-color: rgba(250, 255, 0, 0.3);
+    background-color: rgba(250, 255, 0, 0.5);
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -353,7 +353,8 @@ fieldset{
 }
 
 /*Responsivo*/
-@media(max-width: 420px){
+@media(max-width: 767px){
+    /*Header*/
     #header{
         width: 100%;
         display: flex;
@@ -421,6 +422,7 @@ fieldset{
     #nav.teste #lista-menu{
         visibility: visible;
         height: 100vh;
+        overflow-y: auto;
     }    
     li{
         padding: 1rem 0;
@@ -459,5 +461,107 @@ fieldset{
     .sticky .img-linkedin{
         width: 25px;
         height: 25px;
+    }
+    /*Fim do Header*/
+
+    /*Home*/
+    .name{
+        font-size: 28px;
+        padding: 20px 20px;
+    }
+
+    /*Sobre*/
+    #foto-perfil{
+        width: 250px;
+        padding-left: 10px;
+    }
+    .sobre-mim{
+        width: 100%;
+        font-size: 16px;
+        padding: 0px 20px 0px 20px;
+    }
+
+}
+@media(max-width: 635px){
+    .minha-img{
+        display: none;
+        font-size: 16px;
+    }
+    #sobre{
+        height: 660px;
+    }
+    .info{
+        margin-top: 20px;
+    }
+}
+@media(min-width: 649px){
+    .name{
+        font-size: 36px;
+    }
+}
+@media(max-width: 648px){
+    #projeto{
+        height: 875px;
+    }
+    .grid-images-projetos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .card{
+        margin-top: 10px;
+    }
+}
+@media(max-width: 880px){
+    #skill{
+        height: 550px;
+    }
+    .skill-img{
+        width: 90px;
+        height: 90px;
+    }
+    .grid-images{
+        column-gap: 0px;
+        row-gap: 50px;
+    }
+    .html::after{
+        width: 60px;
+        height: 60px;
+        top: 25px;
+    }
+    .css::after{
+        width: 60px;
+        height: 60px;
+        top: 25px;
+    }
+    .javascript::after{
+        width: 60px;
+        height: 60px;
+        top: 25px;
+    }
+    .python::after{
+        width: 60px;
+        height: 60px;
+        top: 25px;
+    }
+    .git::after{
+        width: 60px;
+        height: 60px;
+        top: 25px;
+    }
+}
+@media(min-width: 768px) and (max-width: 1023px){
+    .titulo-portifolio{
+        width: 30%;
+    }
+    .name{
+        padding: 50px 0 0 50px
+    }
+    .sobre-mim{
+        font-size: 18px;
+    }
+    #foto-perfil{
+        width: 250px;
     }
 }

@@ -18,13 +18,13 @@
 <body>
     <!--Começo do Header-->
     <header id="header">
-        <h1 class="titulo-portifolio">Portifó<span class="colorido">lio</span></h1>
+        <h1 class="titulo-portifolio" id="comeco">Portifó<span class="colorido">lio</span></h1>
         <nav class="cabecalho" id="nav">
             <button id="btn-mobile" aria-expanded="false" aria-controls="lista-menu" aria-haspopup="true" aria-label="Abrir Menu">
                 <span id="x"></span>
             </button>
             <ul id="lista-menu" role="menu">
-                <li><a href="#home" id="home-menu" class="main-btn active">Home</a></li>
+                <li><a href="#comeco" id="home-menu" class="main-btn active">Home</a></li>
                 <li><a href="#sobre" class="main-btn">Sobre</a></li>
                 <li><a href="#skill" class="main-btn">Skills</a></li>
                 <li><a href="#projeto" class="main-btn">Projetos</a></li>
@@ -158,7 +158,7 @@
 
         function scrollToIdOnClick(event) {
         event.preventDefault();
-        const to = getScrollTopByHref(event.target) - 20;
+        const to = getScrollTopByHref(event.target) - 60;
         scrollToPosition(to);
         }
 
