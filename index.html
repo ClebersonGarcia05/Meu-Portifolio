@@ -17,11 +17,11 @@
 </head>
 <body>
     <!--Começo do Header-->
-    <header id="nav-bar">
+    <header id="header">
         <h1 class="titulo-portifolio">Portifó<span class="colorido">lio</span></h1>
         <nav class="cabecalho" id="nav">
-            <button id="btn-mobile" aria-expanded="false" aria-controls="lista-menu" aria-haspopup="true" aria-label="Abrir Menu">menu
-                <span id="hamburguer"></span>
+            <button id="btn-mobile" aria-expanded="false" aria-controls="lista-menu" aria-haspopup="true" aria-label="Abrir Menu">
+                <span id="x"></span>
             </button>
             <ul id="lista-menu" role="menu">
                 <li><a href="#home" id="home-menu" class="main-btn active">Home</a></li>
@@ -127,12 +127,14 @@
     <script>
         //Parte da escolha do menu
         var btnContainer = document.getElementById("lista-menu");
+        const nav = document.getElementById('nav')
         var btns = btnContainer.getElementsByClassName("main-btn");
         for (var i = 0; i < btns.length; i++) {
         btns[i].addEventListener("click", function() {
             var current = document.getElementsByClassName("active");
             current[0].className = current[0].className.replace(" active", "");
             this.className += " active";
+            nav.classList.toggle('teste')
         });
         }
 

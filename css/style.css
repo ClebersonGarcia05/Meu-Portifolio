@@ -16,12 +16,15 @@ body::-webkit-scrollbar-track{
 }
 
 /*Começo do header*/
-header{
+#header{
     background-color: #282828;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+#btn-mobile{
+    display: none;
 }
 .icon-menu{
     display: none;
@@ -351,17 +354,21 @@ fieldset{
 
 /*Responsivo*/
 @media(max-width: 420px){
-    header{
+    #header{
         width: 100%;
         display: flex;
         justify-content: space-around;
+    }
+    .cabecalho{
+        display: contents;
+
     }
     .titulo-portifolio{
         font-size: 24px;
         width: 40%;
         padding-left: 0;
     }
-    #nav, #btn-mobile {
+    #btn-mobile {
         display: flex;
         padding: 0.5rem 1rem;
         font-size: 1rem;
@@ -369,33 +376,35 @@ fieldset{
         background: none;
         cursor: pointer;
         gap: 0.5rem;
+        position: absolute;
+        right: -8px;
       }
-      #hamburger {
-        border-top: white 2px solid;
+    #x {
+        color: #E0E0E0;
+        border-top: 2px solid;
         width: 20px;
-      }
-      #hamburger::after,
-      #hamburger::before {
-        content: ' ';
-        display: block;
-        width: 20px;
-        height: 2px;
-        background: currentColor;
-        margin-top: 5px;
-        transition: 0.3s;
-        position: relative;
-        z-index: 5000;
-      }
-      #nav.teste #hamburger {
-        border-top-color: transparent;
-      }
-      #nav.teste #hamburger::before {
-        transform: rotate(135deg);
-      }
-      #nav.teste #hamburger::after {
-        transform: rotate(-135deg);
-        top: -7px;
-      }
+    }
+    #x::after, #x::before{
+    content: ' ';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+    z-index: 5000;
+    }
+    #nav.teste #x {
+    border-top-color: transparent;
+    }
+    #nav.teste #x::before {
+    transform: rotate(135deg);
+    }
+    #nav.teste #x::after {
+    transform: rotate(-135deg);
+    top: -7px;
+    }
     #lista-menu{
         display: block;
         position: absolute;
@@ -409,7 +418,7 @@ fieldset{
         visibility: hidden;
         overflow-y: hidden;
     }
-    .teste #lista-menu{
+    #nav.teste #lista-menu{
         visibility: visible;
         height: 100vh;
     }    
