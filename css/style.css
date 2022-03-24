@@ -281,8 +281,7 @@ figcaption{
     position: relative;
 }
 .grid-images-projetos{
-    display: grid;
-    grid-template-columns: auto auto;
+    display: flex;
     width: 100%;
     justify-content: space-evenly;
     text-align: center;
@@ -501,7 +500,7 @@ fieldset{
 }
 @media(max-width: 648px){
     #projeto{
-        height: 875px;
+        height: 575px;
     }
     .grid-images-projetos{
         display: flex;
